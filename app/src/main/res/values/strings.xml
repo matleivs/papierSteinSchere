@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">papierSteinSchere</string>
+    <string name="sharedPrefSteinScherePapier">sharedPrefsteinScherePapier</string>
+    <string name="auswahlPOne">auswahlPOne</string>
+    <string name="auswahlPTwo">auswahlPTwo</string>
+    <string name="p1Win">Player 1 wins</string>
+    <string name="p2Win">Player 2 wins</string>
+    <string name="draw">Draw</string>
+    <string name="stein_text">Stein</string>
 </resources>

@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WaitPlayer2" />
+        <activity android:name=".Player2Choose" />
+        <activity android:name=".ResultScreen"></activity>
     </application>
 
 </manifest>
