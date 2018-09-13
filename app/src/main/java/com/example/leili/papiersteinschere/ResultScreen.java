@@ -31,18 +31,22 @@ public class ResultScreen extends AppCompatActivity {
         this.startActivity(intent);
     }
     @OnClick(R.id.winner)
-    void onClickWin(){
+    void onClickShowWinner() {
 
         int defValuePlayers = getResources().getInteger(R.integer.defValuePlayers);
         int auswahlPTwo = sharedPref.getInt(getString(R.string.auswahlPTwo), defValuePlayers);
         int auswahlPOne = sharedPref.getInt("auswahlPOne", defValuePlayers);
 
+        determineWinner(auswahlPTwo, auswahlPOne);
+    }
+
+    private void determineWinner(int auswahlPTwo, int auswahlPOne) {
         if (auswahlPOne == auswahlPTwo) {
             message.setText("Draw, beide Player haben die Auswahl " + getAuswahl(auswahlPOne));
         } else {
             if (auswahlPOne == 0) {
                 if (auswahlPTwo == 1) {
-                    message.setText("Player1 schlägt Player2 " + getAuswahl(auswahlPOne) + ">" + getAuswahl(auswahlPTwo));
+                    message.setText("Player1 schlägt Player2 " + getAuswahl(auswahlPOne) + " > " + getAuswahl(auswahlPTwo));
                 } else {
                     message.setText("Player2 umwickelt Player1 " + getAuswahl(auswahlPTwo) + ">" + getAuswahl(auswahlPOne));
                 }
@@ -61,7 +65,6 @@ public class ResultScreen extends AppCompatActivity {
                 }
             }
         }
-
     }
 
     private String getAuswahl(int auswahlPlayer) {
