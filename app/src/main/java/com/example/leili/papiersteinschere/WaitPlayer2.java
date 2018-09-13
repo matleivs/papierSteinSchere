@@ -26,16 +26,7 @@ public class WaitPlayer2 extends AppCompatActivity {
     void onClickGoButton(){
         openPlayer2Chose();
     }
-    @OnClick(R.id.testButton)
-    void onClickTestbutton(){
-        int defValuePlayers = getResources().getInteger(R.integer.defValuePlayers);
-        int auswahlPOne = sharedPref.getInt(getString(R.string.auswahlPOne), defValuePlayers);
-        Context context = getApplicationContext();
-        String text = String.valueOf(auswahlPOne);
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(context,text,duration);
-        toast.show();
-    }
+
     private void openPlayer2Chose(){
         Intent intent = new Intent(this,Player2Choose.class);
         startActivity(intent);
