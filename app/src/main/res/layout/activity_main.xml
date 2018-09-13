@@ -4,22 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rock_paper_scissor"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choose your destiny!!!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134"
-        android:textAllCaps="true"
-        android:textSize="25sp"
-        android:fontFamily="monospace"
-        />
 
     <android.support.constraint.ConstraintLayout
 
@@ -29,8 +16,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <Button
@@ -38,33 +27,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="119dp"
+            android:fontFamily="monospace"
             android:text="@string/stein_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:fontFamily="monospace"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/scissorsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:fontFamily="monospace"
             android:text="Schere"
             app:layout_constraintStart_toStartOf="@+id/stoneButton"
-            app:layout_constraintTop_toBottomOf="@+id/stoneButton"
-            android:fontFamily="monospace"/>
+            app:layout_constraintTop_toBottomOf="@+id/stoneButton" />
 
         <Button
             android:id="@+id/paperButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Papier"
-            app:layout_constraintStart_toStartOf="@+id/scissorsButton"
-            app:layout_constraintTop_toBottomOf="@+id/scissorsButton"
             android:fontFamily="monospace"
-            android:textStyle="normal"/>
+            android:text="Papier"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/scissorsButton"
+            app:layout_constraintTop_toBottomOf="@+id/scissorsButton" />
 
     </android.support.constraint.ConstraintLayout>
 
