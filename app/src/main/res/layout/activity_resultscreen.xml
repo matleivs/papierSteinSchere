@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/fireworks"
     tools:context=".ResultScreen">
 
     <Button
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="228dp"
         android:layout_marginTop="8dp"
-        android:text="changing Text"
+        android:text=""
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
