@@ -42,26 +42,26 @@ public class ResultScreen extends AppCompatActivity {
 
     private void determineWinner(int auswahlPTwo, int auswahlPOne) {
         if (auswahlPOne == auswahlPTwo) {
-            message.setText("Draw, beide Player haben die Auswahl " + getAuswahl(auswahlPOne));
+            message.setText("Unentschieden, beide Spielenden haben die Auswahl " + getAuswahl(auswahlPOne));
         } else {
             if (auswahlPOne == 0) {
                 if (auswahlPTwo == 1) {
-                    message.setText("Player1 schlägt Player2 " + getAuswahl(auswahlPOne) + " > " + getAuswahl(auswahlPTwo));
+                    message.setText("Person 1 schlägt Person 2 " + getAuswahl(auswahlPOne) + " > " + getAuswahl(auswahlPTwo));
                 } else {
-                    message.setText("Player2 umwickelt Player1 " + getAuswahl(auswahlPTwo) + ">" + getAuswahl(auswahlPOne));
+                    message.setText("Person 2 umwickelt Person 1 " + getAuswahl(auswahlPTwo) + ">" + getAuswahl(auswahlPOne));
                 }
             } else if (auswahlPOne == 1) {
                 if (auswahlPTwo == 0) {
-                    message.setText("Player2 schlägt Player1 " + getAuswahl(auswahlPTwo) + ">" + getAuswahl(auswahlPOne));
+                    message.setText("Person 2 schlägt Person 1 " + getAuswahl(auswahlPTwo) + ">" + getAuswahl(auswahlPOne));
                 } else {
-                    message.setText("Player1 zerschneidet Player2 " + getAuswahl(auswahlPOne) + ">" + getAuswahl(auswahlPTwo));
+                    message.setText("Person 1 zerschneidet Person 2 " + getAuswahl(auswahlPOne) + ">" + getAuswahl(auswahlPTwo));
                 }
 
             } else {
                 if (auswahlPTwo == 0) {
-                    message.setText("Player1 umwickelt Player2 " + getAuswahl(auswahlPOne) + ">" + getAuswahl(auswahlPTwo));
+                    message.setText("Person 1 umwickelt Person 2 " + getAuswahl(auswahlPOne) + ">" + getAuswahl(auswahlPTwo));
                 } else {
-                    message.setText("Player2 zerschneidet Player1 " + getAuswahl(auswahlPTwo) + ">" + getAuswahl(auswahlPOne));
+                    message.setText("Person 2 zerschneidet Person 1 " + getAuswahl(auswahlPTwo) + ">" + getAuswahl(auswahlPOne));
                 }
             }
         }
